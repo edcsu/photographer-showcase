@@ -35,12 +35,14 @@
     <v-main>
       <HeroSection />
       <ServicesSection />
+      <PleaSection />
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HeroSection from './components/HeroSection';
+import PleaSection from './components/PleaSection';
 import ServicesSection from './components/ServicesSection';
 
 export default {
@@ -48,7 +50,8 @@ export default {
 
   components: {
     HeroSection,
-    ServicesSection
+    PleaSection,
+    ServicesSection,
   },
 
   data: () => ({
