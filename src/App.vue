@@ -34,18 +34,21 @@
 
     <v-main>
       <HeroSection />
+      <ServicesSection />
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HeroSection from './components/HeroSection';
+import ServicesSection from './components/ServicesSection';
 
 export default {
   name: 'App',
 
   components: {
     HeroSection,
+    ServicesSection
   },
 
   data: () => ({

@@ -43,8 +43,8 @@
         <v-btn icon>
             <v-icon>mdi-facebook</v-icon>
         </v-btn>
-        <v-btn x-large>
-            Hire Me
+        <v-btn x-large color="black" class="white--text">
+          Hire Me
         </v-btn>
       </v-col>
     </v-row>
