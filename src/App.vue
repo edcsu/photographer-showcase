@@ -37,6 +37,7 @@
       <ServicesSection />
       <PleaSection />
       <ProjectsSection />
+      <TeamSection />
     </v-main>
   </v-app>
 </template>
@@ -46,6 +47,7 @@ import HeroSection from './components/HeroSection';
 import PleaSection from './components/PleaSection';
 import ProjectsSection from './components/ProjectsSection';
 import ServicesSection from './components/ServicesSection';
+import TeamSection from './components/TeamSection';
 
 export default {
   name: 'App',
@@ -55,6 +57,7 @@ export default {
     PleaSection,
     ProjectsSection,
     ServicesSection,
+    TeamSection,
   },
 
   data: () => ({
