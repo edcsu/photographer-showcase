@@ -2,54 +2,50 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="#F9F9F9"
       dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+      <v-toolbar-title class="black--text">Fotoz.</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
+        text       
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="black--text">Portfolio</span>
+      </v-btn><v-btn
+        text       
+      >
+        <span class="black--text">Blogs</span>
+      </v-btn><v-btn
+        text       
+      >
+        <span class="black--text">Contact Me</span>
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        
+      >
+        <span class="">Download CV</span>
       </v-btn>
     </v-app-bar>
 
     <v-main>
+      <HeroSection />
     </v-main>
   </v-app>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld';
+import HeroSection from './components/HeroSection';
 
 export default {
   name: 'App',
 
   components: {
-    // HelloWorld,
+    HeroSection,
   },
 
   data: () => ({
