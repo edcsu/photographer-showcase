@@ -39,11 +39,13 @@
       <ProjectsSection />
       <TeamSection />
       <InquirySection />
+      <ClientsSection />
     </v-main>
   </v-app>
 </template>
 
 <script>
+import ClientsSection from './components/ClientsSection';
 import HeroSection from './components/HeroSection';
 import InquirySection from './components/InquirySection';
 import PleaSection from './components/PleaSection';
@@ -55,6 +57,7 @@ export default {
   name: 'App',
 
   components: {
+    ClientsSection,
     HeroSection,
     InquirySection,
     PleaSection,
