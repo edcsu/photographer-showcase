@@ -41,6 +41,7 @@
       <InquirySection />
       <ClientsSection />
       <ReviewSection />
+      <LatestBlogsSection />
     </v-main>
   </v-app>
 </template>
@@ -49,6 +50,7 @@
 import ClientsSection from './components/ClientsSection';
 import HeroSection from './components/HeroSection';
 import InquirySection from './components/InquirySection';
+import LatestBlogsSection from './components/LatestBlogsSection';
 import PleaSection from './components/PleaSection';
 import ProjectsSection from './components/ProjectsSection';
 import ReviewSection from './components/ReviewSection';
@@ -62,6 +64,7 @@ export default {
     ClientsSection,
     HeroSection,
     InquirySection,
+    LatestBlogsSection,
     PleaSection,
     ProjectsSection,
     ReviewSection,
