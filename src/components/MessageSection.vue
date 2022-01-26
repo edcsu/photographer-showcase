@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col class="" cols="12">
         <h1 class="display-3 font-weight-bold mb-3">
-          How Can I Help You?
+          Contact Us
         </h1>
       </v-col>
     </v-row>

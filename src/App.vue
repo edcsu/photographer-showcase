@@ -44,11 +44,14 @@
       <LatestBlogsSection />
       <MessageSection />
     </v-main>
+
+    <FooterSection />
   </v-app>
 </template>
 
 <script>
 import ClientsSection from './components/ClientsSection';
+import FooterSection from './components/FooterSection';
 import HeroSection from './components/HeroSection';
 import InquirySection from './components/InquirySection';
 import LatestBlogsSection from './components/LatestBlogsSection';
@@ -64,6 +67,7 @@ export default {
 
   components: {
     ClientsSection,
+    FooterSection,
     HeroSection,
     InquirySection,
     LatestBlogsSection,
