@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col class="" cols="12">
         <h1 class="display-3 font-weight-bold mb-3">
-          Contact Us
+          Contact Me
         </h1>
       </v-col>
     </v-row>
@@ -33,7 +33,7 @@
             clearable
             label="Your Message"
             :rules="messageRules"
-            :value="message"
+            v-model="message"
             ></v-textarea>
 
             <v-btn
@@ -80,8 +80,11 @@ export default {
         v => !!v || 'E-mail is required',
         v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
       ],
-      messageRules: [v => v.length <= 25 || 'Max 25 characters'],
-      message: 'Hello!',
+      messageRules: [
+        v => !!v || 'Message is required',
+        v => v.length <= 25 || 'Max 25 characters'
+      ],
+      message: '',
     }),
 
     methods: {
