@@ -1,22 +1,24 @@
 <template>
-  <v-container >
-    <v-row class="text-center">
-      <v-col class="" cols="12">
-        <h1 class="display-3 font-weight-bold mb-3">
-          Contact Me
-        </h1>
-      </v-col>
-    </v-row>
-    <v-row class="text-center">
-      <v-col class="" cols="6">
+  <div>
+    <v-container >
+      <v-row class="text-center">
+        <v-col class="" cols="12">
+          <h1 class="display-3 font-weight-bold mb-3">
+            Contact Me
+          </h1>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-card max-width="600" class="mx-auto mb-3" flat>
         <v-form
             ref="form"
             v-model="valid"
             lazy-validation
         >
+          <v-card-text>
             <v-text-field
             v-model="name"
-            :counter="10"
+            :counter="60"
             :rules="nameRules"
             label="Your Name"
             required
@@ -30,12 +32,23 @@
             ></v-text-field>
 
             <v-textarea
+            :counter="255"
             clearable
             label="Your Message"
             :rules="messageRules"
             v-model="message"
             ></v-textarea>
+          </v-card-text>
 
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            
+            <v-btn
+              color="warning"
+              @click="resetValidation"
+            >
+            Reset Validation
+            </v-btn>
             <v-btn
             :disabled="!valid"
             color="success"
@@ -44,25 +57,10 @@
             >
             Send Message
             </v-btn>
-
-            <v-btn
-            color="error"
-            class="mr-4"
-            @click="reset"
-            >
-            Reset Form
-            </v-btn>
-
-            <v-btn
-            color="warning"
-            @click="resetValidation"
-            >
-            Reset Validation
-            </v-btn>
+          </v-card-actions>
         </v-form>
-      </v-col>
-    </v-row>
-  </v-container>
+    </v-card>
+  </div>
 </template>
 
 <script>
@@ -73,7 +71,7 @@ export default {
       name: '',
       nameRules: [
         v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+        v => (v && v.length <= 60) || 'Name must be less than 60 characters',
       ],
       email: '',
       emailRules: [
@@ -82,7 +80,7 @@ export default {
       ],
       messageRules: [
         v => !!v || 'Message is required',
-        v => v.length <= 25 || 'Max 25 characters'
+        v => v.length <= 255 || 'Max 255 characters'
       ],
       message: '',
     }),
@@ -90,6 +88,7 @@ export default {
     methods: {
       validate () {
         this.$refs.form.validate()
+        this.reset()
       },
       reset () {
         this.$refs.form.reset()
