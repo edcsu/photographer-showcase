@@ -1,7 +1,7 @@
 <template>
-  <v-container >
+  <v-container class="py-16">
     <v-row class="text-center">
-      <v-col cols="4">
+      <v-col cols="4" class="my-16 pt-16">
         <v-row class="text-center">
           <v-col cols="6">
             <v-card>
@@ -52,9 +52,9 @@
       </v-col>
       <v-col cols="4">
         <v-card>
-          <h1 class="display-3 font-weight-bold mb-3">
+          <v-card-title class="display-1 mb-3">
             Why Hire Me For Your Next Project?
-          </h1>
+          </v-card-title>
           <v-card-text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Blanditiis delectus, alias vitae facere fugit iste sit voluptatum laboriosam optio aspernatur? 

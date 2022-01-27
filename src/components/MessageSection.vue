@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <v-container >
+  <div class="message-color py-16">
+    <v-container>
       <v-row class="text-center">
         <v-col class="" cols="12">
-          <h1 class="display-3 font-weight-bold mb-3">
+          <h1 class="display-3 font-weight-bold mb-3 white--text">
             Contact Me
           </h1>
         </v-col>
       </v-row>
     </v-container>
-    <v-card max-width="600" class="mx-auto mb-3" flat>
+    <v-card max-width="600" class="mx-auto mb-10" flat color="">
         <v-form
             ref="form"
             v-model="valid"
@@ -101,5 +101,7 @@ export default {
 </script>
 
 <style>
-
+  .message-color{
+    background-color: #153243;
+  }
 </style>

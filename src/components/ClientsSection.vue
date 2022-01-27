@@ -1,8 +1,8 @@
 <template>
-  <v-container >
+  <v-container class="py-16">
     <v-row class="text-center">
-      <v-col cols="4">
-        <v-card>
+      <v-col cols="3">
+        <v-card flat>
           <v-img
             :src="require('../assets/logo.svg')"
             class="my-3"
@@ -11,8 +11,8 @@
           />
         </v-card>
       </v-col>
-      <v-col cols="4">
-        <v-card>
+      <v-col cols="3">
+        <v-card flat>
           <v-img
             :src="require('../assets/logo.svg')"
             class="my-3"
@@ -21,8 +21,8 @@
           />
         </v-card>
       </v-col>
-      <v-col cols="4">
-        <v-card>
+      <v-col cols="3">
+        <v-card flat>
           <v-img
             :src="require('../assets/logo.svg')"
             class="my-3"
@@ -31,8 +31,8 @@
           />
         </v-card>
       </v-col>
-      <v-col cols="4">
-        <v-card>
+      <v-col cols="3">
+        <v-card flat>
           <v-img
             :src="require('../assets/logo.svg')"
             class="my-3"

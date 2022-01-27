@@ -1,5 +1,5 @@
 <template>
-  <v-container >
+  <v-container class="my-12 py-12">
     <v-row class="text-center">
       <v-col class="" cols="12">
         <h1 class="display-3 font-weight-bold mb-3">
@@ -15,20 +15,21 @@
             class="my-3"
             contain
             height="200"
-          />
-          <v-app-bar
-            flat
-            color=""
           >
-            <v-toolbar-title class="text-h6 white--text pl-0">
+            <v-chip
+              class="ma-4"
+              color="grey lighten-4"
+              label
+            >
               Trending
-            </v-toolbar-title>
-          </v-app-bar>
-           <v-card-subtitle class="pb-0">
+            </v-chip>
+          </v-img>
+
+          <v-card-subtitle class="pb-0">
              <v-container >
-              <v-row class="">
+              <v-row class="font-italic">
                 <v-col class="" cols="6">
-                  <span>29 april, 2020</span>
+                  <span>29 April, 2020</span>
                 </v-col>
                 <v-col class="text-right" cols="6">
                   <span>2 min read</span>
@@ -36,19 +37,21 @@
               </v-row>
              </v-container>
           </v-card-subtitle>
-          <v-card-title>
+          <v-card-title class="mt-n6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Blanditiis delectus, alias vitae facere fugit iste sit voluptatum laboriosam optio aspernatur? 
           </v-card-title>
-          <v-container >
+          <v-container class="mt-n7" >
               <v-row class="">
-                <v-col class="" cols="6">
+                <v-col class="mt-6" cols="6">
                   <span>By Jonathan Smith</span>
                 </v-col>
                 <v-col class="" cols="6">
                   <v-card-actions>
                     <v-btn
+                      outlined
                       color=""
+                      x-large
                     >
                       Read More
                     </v-btn>
@@ -66,20 +69,21 @@
             class="my-3"
             contain
             height="200"
-          />
-          <v-app-bar
-            flat
-            color=""
           >
-            <v-toolbar-title class="text-h6 white--text pl-0">
+            <v-chip
+              class="ma-4"
+              color="grey lighten-4"
+              label
+            >
               Trending
-            </v-toolbar-title>
-          </v-app-bar>
-           <v-card-subtitle class="pb-0">
+            </v-chip>
+          </v-img>
+
+          <v-card-subtitle class="pb-0">
              <v-container >
-              <v-row class="">
+              <v-row class="font-italic">
                 <v-col class="" cols="6">
-                  <span>29 april, 2020</span>
+                  <span>29 April, 2020</span>
                 </v-col>
                 <v-col class="text-right" cols="6">
                   <span>2 min read</span>
@@ -87,19 +91,21 @@
               </v-row>
              </v-container>
           </v-card-subtitle>
-          <v-card-title>
+          <v-card-title class="mt-n6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Blanditiis delectus, alias vitae facere fugit iste sit voluptatum laboriosam optio aspernatur? 
           </v-card-title>
-          <v-container >
+          <v-container class="mt-n7" >
               <v-row class="">
-                <v-col class="" cols="6">
+                <v-col class="mt-6" cols="6">
                   <span>By Jonathan Smith</span>
                 </v-col>
                 <v-col class="" cols="6">
                   <v-card-actions>
                     <v-btn
+                      outlined
                       color=""
+                      x-large
                     >
                       Read More
                     </v-btn>
@@ -108,7 +114,6 @@
               </v-row>
              </v-container>
         </v-card>
-        
       </v-col>
     </v-row>
     <v-row class="text-center">
